@@ -1,0 +1,150 @@
+body {
+	background-color: #FFF !important;
+}
+
+header.header {
+	background: transparent;
+	position: relative;
+}
+
+#hero-logo {
+	background: url('../images/hero.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: top center;
+	width: 100%;
+	display: block;
+	height: 470px;
+}
+
+.nav-wrap {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 365px;
+	border-top: 1px solid rgba(100,100,100,0.5);
+	border-bottom: 1px solid rgba(100,100,100,0.5);
+	background: rgba(255,255,255,0.8);
+	transition: background 1s;
+}
+
+.nav-wrap.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: background 1s;
+	background: rgba(255,255,255,1);
+	z-index: 33;
+}
+
+.fixed-row-back {
+	background-attachment: fixed;
+}
+
+#menu-primary {
+	position: relative;
+	display: flex;
+	width: 110%;
+	margin-left: -5%;
+}
+
+.nav-wrap.sticky #menu-primary:before {
+	content: " ";
+	width: 25px;
+	height: 25px;
+	background: url('../images/hubicon.jpg') center no-repeat transparent;
+	background-size: contain;
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	z-index: 99;
+}
+
+body.admin-bar .nav-wrap.sticky {
+	top: 32px;
+}
+
+#menu-primary li {
+	flex: 1;
+	display: inline-block;
+	text-align: center;
+}
+
+#menu-primary li a {
+	display: block;
+	color: #64a4c4;
+	width: 100%;
+	height: 100%;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: bold;
+	text-shadow: 0 0 2px #FFF;
+	border-radius: 3px;
+	transition: 500ms;
+}
+
+#menu-primary li a:hover {
+	text-decoration: none;
+	transition: 500ms;
+	color: #000;
+}
+
+.hentry {
+	border: none;
+}
+
+body.home .article-header {
+	display: none;
+}
+
+.hentry header {
+	padding-top: 0;
+	border-bottom: 0px;
+}
+
+.nav-wrap .mobile-open {
+	display: none;
+}
+
+@media screen and (max-width: 1200px){
+	#menu-primary {
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 768px){
+	#hero-logo {
+		height: 170px;
+	}
+	.nav-wrap {
+		position: static;
+		top: 0;
+		border-top: 0px;
+		padding-top: 40px;
+	}
+	.nav-wrap ul#menu-primary {
+		display: none;
+	}
+	.nav-wrap .mobile-open {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 40px;
+		font-size: 24px;
+		line-height: 40px;
+		text-align: center;
+		color: #999;
+		text-decoration: none;
+	}
+	#menu-primary {
+		width: 100%;
+		display: block;
+	}
+	#menu-primary li {
+		display: block;
+		margin-left: 0;
+	}
+}
