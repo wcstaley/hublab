@@ -55,8 +55,8 @@ define('SECURE_AUTH_SALT', 'PI<cL~A+j+<FWo$2%t/{2z*Sg-f#:v4S{I&|Lc%II-f0U^dQHeP@
 define('LOGGED_IN_SALT',   'A80[+n!pcDr?o49*^6_p/dEBKl:~{+?^iFB0H0DXJqxJg,pRCKC>G1)A72)K|EWj');
 define('NONCE_SALT',       '.pbM]<j2]5]1l8gZ2eE:~F3$1tqzI&Tx=*#%g0jI$j-m[;|tRe#1?SREVZzfJJRA');
 
-define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST']);
-define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST']);
+define('WP_HOME', 'https://' . $_SERVER['HTTP_HOST']);
+define('WP_SITEURL', 'https://' . $_SERVER['HTTP_HOST']);
 
 
 /**#@-*/
