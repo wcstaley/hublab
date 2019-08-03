@@ -9,8 +9,6 @@ RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
 # i.e.  http://www.example.com/foo/ to https://www.example.com/foo/
 # The leading slash is made optional so that this will work either in httpd.conf
 # or .htaccess context
-<<<<<<< HEAD
-=======
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
@@ -22,4 +20,3 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 </IfModule>
 # END WordPress
->>>>>>> 20433442a821303476db4fbc679f97a74e176b60
