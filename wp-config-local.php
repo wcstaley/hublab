@@ -20,13 +20,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'hublabwp' );
+define( 'DB_NAME', 'hublab' );
 
 /** MySQL database username */
 define( 'DB_USER', 'hublab' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'PwdDd5OGsFx03ejM' );
+define( 'DB_PASSWORD', '?X#N>ql;;H0<{~j' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
